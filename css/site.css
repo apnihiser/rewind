@@ -1,8 +1,18 @@
 :root {
-    --primary-color: #1d5888;
-    --secondary-color: #ff993b;
+    --primary-color: #000000;
+    --secondary-color: #52a7bd;
     --dark-color: #292929;
     --white-color: #e7e7e7;
+}
+
+@font-face {
+    src: url(/fonts/BarlowCondensed-BlackItalic.ttf);
+    font-family: barlow;
+}
+
+.barlowfont {
+    font-family: barlow;
+    font-size: 2em;
 }
 
 body {
