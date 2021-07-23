@@ -54,7 +54,7 @@ footer .social>a:hover {
     color: orangered;
 }
 
-.cssicon {
+.css3icon {
     color: rgb(11,82,214);
 }
 
@@ -78,4 +78,22 @@ main>.container {
     left: 0;
     bottom: 0;
     width: 100% ;
+}
+
+.function {
+    color: #c75c3b;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.id {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.variable {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-style: italic;
 }

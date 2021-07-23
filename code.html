@@ -92,7 +92,6 @@
                         function displayString(revString){
                         
                             //write to the page
-                            //Bad Method use template literal below: document.getElementById("msg").innerHTML = "Your string reversed is: " + revString;
                             document.getElementById("msg").innerHTML = `Your string reversed is ${revString}`;
                         
                             //show the alert box
@@ -103,9 +102,27 @@
                     </pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>The Code is structured in one function.</p>
-                    <h5>Hello World</h5>
-                    <p>Hello World is a function that displays an alert with a message of "Hello World"</p>
+                    
+                    <h1>REWIND.LY</h1>
+                    <p>An application designed to return your entered string in reverse order.</p>
+                    <h5>Controller</h5>
+                    <p>The Controller function <span class="function">getValue()</span> is designed to control the flow of operations within the application. This control is dependent on previous steps before being executed. These operations can be summarized in 4 steps.</p>
+                    <ol>
+                        <li>Reset the DIV <span class="id">alert</span> element, by clearing any previous results</li>
+                        <li>Gather a string to reverse</li>
+                        <li>Set a variable as the reversed string by running the logic function</li>
+                        <li>Display the reversed string by writing the results into the DOM and removing the "invisible" class from the DIV <span class="id">alert</span> element.</li>
+                    </ol>
+                    <h5>Logic</h5>
+                    <p>This will be an excersize using arrays. Because of this we will need to <span class="function">push()</span> the built in method since it is an array method instead of something like the <span class="function">+=</span> operator. Javascript is designed to convert any declared arrays into strings if <span class="function">+=</span> is used since it is a string operator designed to concatenate.</p>
+                    <p>That being said, the logic will be performed in 3 statements.</p>
+                    <ol>
+                        <li>Declare array variable <span class="variable">revString</span></li>
+                        <li>By use of for loops, <span class="function">push()</span> the last indexed character of the string into the array</li>
+                        <li>Return <span class="variable">revString</span> once the loop has completed.</li>
+                    </ol>
+                    <h5>View</h5>
+                    <p>Once called, the view fuction <span class="function">displayString()</span> will display the contents of the reversed string onto the user's screen by use of the <span class="function">classlist.remove("invisible")</span> method on the DIV <span class="id">alert</span>. Now visable, the results can be written to the DOM via the <span class="function">innerHTML</span> method. If the application is ran again the invisible class will be set "on" via the controller function thus hidding the DIV <span class="id">alert</span> ID element.</p>
                 </div>
             </div>
         </div>
